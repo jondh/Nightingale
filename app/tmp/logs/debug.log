@@ -1,0 +1,1279 @@
+2013-12-31 22:17:33 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2013-12-31 22:17:38 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2013-12-31 22:50:55 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2013-12-31 23:15:25 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2013-12-31 23:15:27 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2013-12-31 23:15:32 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 00:12:02 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 00:12:23 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 01:08:06 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 01:08:14 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 01:19:48 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 01:19:57 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 01:29:47 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 01:29:54 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 02:08:06 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 07:54:20 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 07:54:45 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 09:20:32 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 10:00:20 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 10:00:30 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 10:53:52 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 10:54:50 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 12:14:01 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 12:14:04 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 12:14:24 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 12:50:13 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 12:50:24 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:49:24 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:49:37 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:49:58 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:51:32 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:22 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:23 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:28 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:28 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:37 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:37 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:42 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:52:42 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:53:11 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:53:33 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:53:33 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:01 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:01 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:25 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:29 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:32 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:42 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:42 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:54:50 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:06 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:09 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:13 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:13 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:17 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 8]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 8
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:18 Notice: Notice (8): Undefined variable: wallet_id in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 12]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 12
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:47 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:55:59 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:56:02 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:56:16 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-01 14:56:19 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-02 13:45:17 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-02 13:45:36 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-02 21:53:24 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-10 00:07:36 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 11:36:32 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 11:36:33 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 11:36:33 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 20:37:32 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 20:37:32 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 20:37:32 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 20:37:46 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 20:37:46 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-14 20:37:46 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-15 19:56:04 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-15 19:56:04 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-15 19:56:04 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:07:41 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:07:41 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:07:41 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:08:13 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:08:13 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:08:14 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:14:15 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:14:15 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:14:15 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:14:34 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:14:34 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-16 22:14:34 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-17 14:49:58 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-17 14:49:58 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-17 14:49:58 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-17 23:07:34 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-17 23:07:34 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-17 23:07:34 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-19 14:35:55 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:47:55 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:47:55 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:47:55 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:49:08 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:49:08 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:49:08 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:53:45 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:53:45 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:53:45 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:54:28 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:54:28 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:54:28 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:54:49 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:54:49 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:54:49 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:55:16 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:55:16 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-20 22:55:16 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-21 18:49:51 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-21 18:49:51 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-21 18:49:51 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-21 18:50:18 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-21 18:50:18 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-21 18:50:18 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 49]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 49
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-23 16:52:16 Notice: Notice (8): Undefined index: file in [/home/whereone/public_html/GroupWalletCake/app/Controller/UsersController.php, line 260]
+Trace:
+UsersController::uploadProfilePic() - APP/Controller/UsersController.php, line 260
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-23 17:03:42 Notice: Notice (8): Undefined variable: uplaod_loc in [/home/whereone/public_html/GroupWalletCake/app/Controller/Component/UploadPicComponent.php, line 73]
+Trace:
+UploadPicComponent::uploadProfilePic() - APP/Controller/Component/UploadPicComponent.php, line 73
+UsersController::uploadProfilePic() - APP/Controller/UsersController.php, line 262
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-01-23 17:04:02 Notice: Notice (8): Undefined index: file in [/home/whereone/public_html/GroupWalletCake/app/Controller/UsersController.php, line 263]
+Trace:
+UsersController::uploadProfilePic() - APP/Controller/UsersController.php, line 263
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:34:34 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:20 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:21 Notice: Notice (8): Undefined variable: uniqueWallets in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletsController.php, line 90]
+Trace:
+WalletsController::index() - APP/Controller/WalletsController.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:28 Notice: Notice (8): Undefined variable: othersInWallet in [/home/whereone/public_html/GroupWalletCake/app/Controller/WalletRelationsController.php, line 59]
+Trace:
+WalletRelationsController::index() - APP/Controller/WalletRelationsController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:46 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:46 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:46 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:50 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:50 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:50 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:59 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:59 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:36:59 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:37:14 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:37:14 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:37:14 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:51:26 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:51:26 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
+2014-02-07 15:51:26 Notice: Notice (8): Undefined variable: prevPage in [/home/whereone/public_html/GroupWalletCake/app/Controller/TransactionsController.php, line 51]
+Trace:
+TransactionsController::add() - APP/Controller/TransactionsController.php, line 51
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 162
+[main] - APP/webroot/index.php, line 110
+
