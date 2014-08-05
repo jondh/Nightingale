@@ -34,8 +34,15 @@
 <script type='text/javascript' src="<?php echo $this->webroot . 'js/fullcalendar.min.js'; ?>"></script>
 
 <div class="container" style="width:100%;">
-	<div class="jumbotron">
+	<div class="jumbotron col-md-8">
 		<div id="calendar"></div>
+	</div>
+	<div class="col-md-4">
+		<ul id="selectedLessions" class="list-group">
+			<a class="list-group-item active h3">
+				<span id="lessionNum">0</span> Lessions
+			</a>
+		</ul>
 	</div>
 	<!-- <div class="col-lg-10">
 		<div class="panel-group" id="accordion">
@@ -57,9 +64,10 @@
 
 <script>
 
-	$(document).ready(function() {
 		
-		var lessionTime = 45;
+		var lessionTime = 60;
+		var numLessions = 0;
+		
 
 	    // page is now ready, initialize the calendar...
 
@@ -76,20 +84,29 @@
 					dayClick: function(date, jsEvent, view) {
 
 						if(view.name.indexOf('month') < 0){
-							var startTime = date.toISOString();
-							date.add('minutes', lessionTime);
-							var endTime = date.toISOString();
-					        alert('Clicked on: ' + date.format("h"));
-							$('#calendar').fullCalendar('addEventSource',
-								{
-									events: [
+							var endDate = moment(date);
+							endDate.add('minutes', lessionTime);
+							var sources = $("#calendar").fullCalendar( 'clientEvents', function(e){
+								if( ( (moment(e.start).isBefore(date) || moment(e.start).isSame(date)) && moment(e.end).isAfter(date)) || ( moment(e.start).isBefore(endDate) && (moment(e.end).isAfter(endDate) || moment(e.end).isSame(endDate)) ) || (moment(e.start).isAfter(date) && moment(e.end).isBefore(endDate)) ){
+									return true;
+								}
+								return false;
+							} );
+					        
+							if(sources.length == 0){
+								addLessionShow(date);
+								$('#calendar').fullCalendar('addEventSource',
 									{
-										title: 'test',
-										start: startTime,
-										end: endTime
+										events: [
+											{
+												title: 'test',
+												start: date.toISOString(),
+												end: endDate.toISOString()
+											}
+										]
 									}
-									]
-								});
+								);
+							}
 						}
 						
 
@@ -107,12 +124,14 @@
 						{
 							id: 999,
 							title: 'Repeating Event',
-							start: '2014-06-09T16:00:00'
+							start: '2014-06-09T16:00:00',
+							end: '2014-06-09T18:00:00'
 						},
 						{
 							id: 999,
 							title: 'Repeating Event',
-							start: '2014-06-16T16:00:00'
+							start: '2014-06-16T16:00:00',
+							end: '2014-06-16T18:00:00'
 						},
 						{
 							title: 'Meeting',
@@ -120,12 +139,9 @@
 							end: '2014-06-12T12:30:00'
 						},
 						{
-							title: 'Lunch',
-							start: '2014-06-12T12:00:00'
-						},
-						{
 							title: 'Birthday Party',
-							start: '2014-06-13T07:00:00'
+							start: '2014-06-13T08:00:00',
+							end: '2014-06-13T010:00:00'
 						},
 						{
 							title: 'Click for Google',
@@ -135,7 +151,12 @@
 					]
 				});
 
-	});
+	
+	function addLessionShow(d){
+		numLessions++;
+		$("#lessionNum").empty().append(numLessions);
+		$("#selectedLessions").append("<div class='list-group-item'>"+d.format("dddd, MMMM Do YYYY, h:mm:ss a")+"</div>");
+	}
 	//
 	// var selectType = 0;
 	// var selectedID = 0;
