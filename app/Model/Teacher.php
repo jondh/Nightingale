@@ -1,6 +1,10 @@
 <?php
 class Teacher extends AppModel {
 	
+	public $belongsTo = array(
+			
+	);
+	
 	// returns teacher tuple if found for user, otherwise returns failure
 	// $result['result'] = 'success' | 'failure'
 	// if success => $result['return'] = $result['return']['Teacher'].. 

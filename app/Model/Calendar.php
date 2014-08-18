@@ -8,20 +8,7 @@ class Calendar extends AppModel {
 					'teacher_id' => $teacher_id
 				)
 			));	
-			
-			if($calendar){
-				$result['result'] = 'success';
-				$result['return'] = $calendar;
-				return $result;
-			}
-			else{
-				$result['result'] = 'failure';
-				return $result;
-			}
-		}
-		else{
-			$result['result'] = 'failure';
-			return $result;
+			return $calendar;
 		}
 	}
 

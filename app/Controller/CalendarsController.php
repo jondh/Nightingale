@@ -6,9 +6,9 @@
 
 	class CalendarsController extends AppController { 
 	
-	
 		public function beforeFilter(){
 			parent::beforeFilter();
+			$this->Auth->allow('newLessions');
        	}
 		
 		public function index(){
@@ -39,6 +39,20 @@
 			$this->set('students', $students);
 			$this->set('teacher', $teacher);
 			$this->set('entries', $myEntries);
+		}
+		
+		public function newLessions(){
+			$teacher_id = 1;
+			$calendar = $this->Calendar->getCalendarForTeacher($teacher_id);
+			if(!$calendar){
+				throw new NotFoundException('Could not find that, sorry.');
+			}
+			
+			$CalendarEntry = ClassRegistry::init('CalendarEntry');
+			$entries = $CalendarEntry->getEntriesForCalendar($calendar['Calendar']['id']);
+			
+			$this->set('entries', $entries);
+			$this->set('calendar', $calendar);
 		}
 		
 	

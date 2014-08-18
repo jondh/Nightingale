@@ -43,6 +43,13 @@ $cakeDescription = __d('cake_dev', 'Nightingale Studios');
         echo $scripts_for_layout;
 	?>
 	
+
+	<link rel='stylesheet' type='text/css' href="<?php echo $this->webroot . 'css/fullcalendar.css'; ?>" />
+	<script type='text/javascript' src="<?php echo $this->webroot . 'js/moment.min.js'; ?>"></script>
+	<script type='text/javascript' src="<?php echo $this->webroot . 'js/jquery.min.js'; ?>"></script>
+	<script type='text/javascript' src="<?php echo $this->webroot . 'js/jquery-ui.custom.min.js'; ?>"></script>
+	<script type='text/javascript' src="<?php echo $this->webroot . 'js/fullcalendar.min.js'; ?>"></script>
+	
     <!-- Bootstrap core CSS -->
     <link href="<?php echo $this->webroot . 'dist/css/ngs.css';?>" rel="stylesheet">
     <!-- Bootstrap theme -->

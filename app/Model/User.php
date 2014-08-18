@@ -1,8 +1,15 @@
 <?php
 class User extends AppModel {
+	
+	public $hasOne = array(
+		'Student',
+		'Teacher'
+	);
+	
+	public $hasMany = array(
+		'Post'
+	);
 
-    /* validate data enetered by user */
-    /* Validation taken from tutorial http://miftyisbored.com/a-complete-login-and-authentication-application-tutorial-for-cakephp-2-3/ */
     public $validate = array(
         'username' => array(
 			'required' => array(
@@ -18,9 +25,7 @@ class User extends AppModel {
                 'allowEmpty' => false
             ),
             'between' => array( 
-            	'on' => 'create',
                 'rule' => array('between', 5, 15), 
-                'required' => true, 
                 'message' => 'Usernames must be between 5 to 15 characters'
             ),
              'unique' => array(
@@ -46,9 +51,7 @@ class User extends AppModel {
                 'allowEmpty' => false
             ),
             'between' => array( 
-            	'on' => 'create',
                 'rule' => array('between', 1, 15), 
-                'required' => true, 
                 'message' => 'Names must be between 1 to 15 characters'
             ),
             'alphaNumericDashUnderscore' => array(
@@ -70,9 +73,7 @@ class User extends AppModel {
                 'allowEmpty' => false
             ),
             'between' => array( 
-            	'on' => 'create',
                 'rule' => array('between', 1, 15), 
-                'required' => true, 
                 'message' => 'Names must be between 1 to 15 characters'
             ),
             'alphaNumericDashUnderscore' => array(
@@ -120,66 +121,6 @@ class User extends AppModel {
             )
         ),
         
-        'firstNameEdit' => array(
-            'between' => array( 
-                'rule' => array('between', 1, 15), 
-                'message' => 'Names must be between 1 to 15 characters',
-                'allowEmpty' => true,
-                'required' => false
-            ),
-            'alphaNumericDashUnderscore' => array(
-                'rule'    => array('alphaNumericDashUnderscore'),
-                'message' => 'Name can only be letters, numbers and underscores'
-            ),
-        ),
-        'lastNameEdit' => array(
-            'between' => array( 
-                'rule' => array('between', 1, 15), 
-                'message' => 'Names must be between 1 to 15 characters',
-                'allowEmpty' => true,
-                'required' => false
-            ),
-            'alphaNumericDashUnderscore' => array(
-                'rule'    => array('alphaNumericDashUnderscore'),
-                'message' => 'Name can only be letters, numbers and underscores'
-            ),
-        ),
-        'emailEdit' => array(
-             'unique' => array(
-                'rule'    => array('isUniqueEmailEdit'),
-                'message' => 'This email is already in use',
-                'allowEmpty' => true,
-                'required' => false
-            ),
-            'between' => array( 
-                'rule' => 'email', 
-                'message' => 'Please enter proper email',
-                'allowEmpty' => true,
-                'required' => false
-            )
-        ),
-        'currentPassword' => array(
-        	'match' => array(
-        		'rule' => array('checkPassword'),
-        		'message' => 'Incorrect Password'
-        	)
-        ), 
-        'passwordEdit' => array(
-            'min_length' => array(
-                'rule' => array('minLength', '6'),   
-                'message' => 'Password must have a mimimum of 6 characters',
-                'allowEmpty' => true,
-                'required' => false
-            )
-        ),
-        'passwordConfirmEdit' => array(
-             'equaltofield' => array(
-                'rule' => array('equaltofield','passwordEdit'),
-                'message' => 'Both passwords must match.',
-                'required' => false,
-            )
-        )
- 
          
     );
      
@@ -189,23 +130,28 @@ class User extends AppModel {
      * @return boolean
      */
     function isUniqueUsername($check) {
-        $username = $this->find(
-            'first',
-            array(
+		if(!isset($this->data[$this->name]['id'])){
+			$id = -1;
+		}
+		else{
+			$id = $this->data[$this->name]['id'];
+		}
+        $username = $this->find('first', array(
+                'conditions' => array(
+                    'User.username' => $check['username'],
+					'User.id !=' => $id
+                ),
                 'fields' => array(
                     'User.id',
                     'User.username'
-                ),
-                'conditions' => array(
-                    'User.username' => $check['username']
                 )
             )
         );
- 
+		
         if(!empty($username)){
             return false;
         }else{
-            return true; 
+            return true;
         }
     }
  
@@ -215,47 +161,25 @@ class User extends AppModel {
      * @return boolean
      */
     function isUniqueEmail($check) {
-        $email = $this->find(
-            'first',
-            array(
+		if(!isset($this->data[$this->name]['id'])){
+			$id = -1;
+		}
+		else{
+			$id = $this->data[$this->name]['id'];
+		}
+        $email = $this->find('first', array(
+                'conditions' => array(
+                    'User.email' => $check['email'],
+					'User.id !=' => $id
+                ),
                 'fields' => array(
                     'User.id'
-                ),
-                'conditions' => array(
-                    'User.email' => $check['email']
                 )
             )
         );
  
         if(!empty($email)){
             return false;
-        }else{
-            return true; 
-        }
-    }
-    
-    function isUniqueEmailEdit($check) {
- 		if(!$check['emailEdit']){
- 			return true;
- 		}
-        $email = $this->find(
-            'first',
-            array(
-                'fields' => array(
-                    'User.id'
-                ),
-                'conditions' => array(
-                    'User.email' => $check['emailEdit']
-                )
-            )
-        );
- 
-        if(!empty($email)){
-            if($this->data[$this->alias]['id'] == $email['User']['id']){
-                return true; 
-            }else{
-                return false; 
-            }
         }else{
             return true; 
         }
@@ -295,54 +219,247 @@ class User extends AppModel {
         } 
         return $this->data[$this->name][$otherfield] === $this->data[$this->name][$fname]; 
     } 
- 
-    /**
-     * Before Save
-     * @param array $options
-     * @return boolean
-     */
-     public function beforeSave($options = array()) {
-     /*
-        // hash our password
-        if (isset($this->data[$this->alias]['password'])) {
-            $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
-        }
-         
-        // if we get a new password, hash it
-        if (isset($this->data[$this->alias]['password_update']) && !empty($this->data[$this->alias]['password_update'])) {
-            $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password_update']);
-        }
-     
-        // fallback to our parent
-        return parent::beforeSave($options);
-    */
-    
-    	if (isset($this->data[$this->alias]['password']) && isset($this->data[$this->alias]['salt'])) {
-        	$this->data[$this->alias]['password'] = 
-            	Security::hash(Security::hash(Security::hash($this->data[$this->alias]['password'].
-        			$this->data[$this->alias]['salt'])));
-   		}
-   		return true;
-   	
-   	/*
-   		if(isset($this->data[$this->alias]['password'])) {
-			$this->data[$this->alias]['password'] = Security::hash($this->data[$this->alias]['password'], 'blowfish');
-			unset($this->data['User']['passwd']);
-		}
+	
+    public function beforeSave($options = array()) {
 
-		return true;
-		*/
-    }
-    
-    public function getUser($userId){
-    	if($userId){
-    		$user = $this->find('first', array(
+   		if (isset($this->data[$this->alias]['password']) && isset($this->data[$this->alias]['salt'])) {
+       		$this->data[$this->alias]['password'] = Security::hash(Security::hash(Security::hash($this->data[$this->alias]['password'].$this->data[$this->alias]['salt'])));
+  		}
+  		return true;
+   }
+	
+    public function getUsers($userIds){
+    	if($userIds){
+    		$user = $this->find('all', array(
     			'conditions' => array(
-    				'id' => $userId
+    				'id' => $userIds
     			)
     		));
     		
     		return $user;
     	}
     }
+	
+    public function getUsersSafe($userIds = -1){
+    	if($userIds > -1){
+    		$users = $this->find('all', array(
+    			'conditions' => array(
+    				'id' => $userIds
+    			),
+				'fields' => array(
+					'id', 'username', 'firstName', 'lastName', 'email', 'aquamarine', 'bloodstone', 'fbID', 'updated', 'dateTime'
+				)
+    		));
+    		
+    		return $users;
+    	}
+    }
+	
+	
+	public function getUserFromFbId($fbId = -1){
+		if($fbId != -1){
+			$user = $this->find('first', array(
+				'conditions' => array(
+					'fbID' => $fbId
+				)
+			));
+			return $user;
+		}
+	}
+	
+	public function getUser($id = -1){
+		if($id > -1){
+			$user = $this->find('first', array(
+				'conditions' => array(
+					'id' => $id
+				)
+			));
+			
+			return $user;
+		}
+	}
+	
+	public function getUserAndData($id = -1){
+		if($id > -1){
+			$this->Question->unbindModel(
+				array(
+					'belongsTo' => array('User')
+				)
+			);
+			$this->Response->unbindModel(
+				array(
+					'belongsTo' => array('User')
+				)
+			);
+			$this->recursive = 2;
+			$user = $this->find('first', array(
+				'conditions' => array(
+					'id' => $id
+				)
+			));
+			$this->recursive = -1;
+			$user_ids = array();
+			if($user){ // get unique user_ids
+				foreach( $user['Question'] as $question ){
+					foreach( $question['Response'] as $response ){
+						if(!in_array($response['user_id'], $user_ids)){
+							array_push($user_ids, $response['user_id']);
+						}
+					}
+				}
+				foreach( $user['Response'] as $response ){
+					if(!in_array($response['Question']['user_id'], $user_ids)){
+						array_push($user_ids, $response['Question']['user_id']);
+					}
+				}
+			}
+			
+			$user['Users'] = $this->getUsersSafe($user_ids);
+			
+			return $user;
+		}
+	}
+	
+	public function getPrivateTokenFromPublicToken($public_token = -1){
+		if($public_token != -1){
+			$token = $this->find('first', array(
+				'conditions' => array(
+					'public_access_token' => $public_token
+				),
+				'fields' => array(
+					'private_access_token'
+				)
+			));
+			return $token;
+		}
+	}
+	
+	public function getUserWithPT($id = -1, $public_token = -1){
+		if($id > -1 && $public_token > -1){
+			$user = $this->find('first', array(
+				'conditions' => array(
+					'id' => $id,
+					'public_access_token' => $public_token
+				)
+			));
+			return $user;
+		}
+	}
+	
+	public function add($data){
+		$data['dateTime'] = null;
+		$db = ConnectionManager::getDataSource('default');
+		$data['updated'] = $db->expression('NOW()');
+		$data['bloodstone'] = '1';
+		$data['salt'] = Security::generateAuthKey();
+		$data['private_access_token'] = Security::generateAuthKey();
+		$data['public_access_token'] = Security::generateAuthKey();
+		if ($this->save($data)) {
+			$result['result'] = "success";
+			$result['id'] = $this->id;
+			return $result;
+		}
+		else{
+			$result['result'] = "faliure";
+			$result['errors'] = $this->validationErrors;
+			return $result;
+		}
+    }
+	
+	public function addFromFacebook($user_profile = 0){
+		if($user_profile != 0){
+			$this->User->create();
+			if( !array_key_exists('username', $user_profile) ){
+				$user_profile['username'] = substr($user_profile['first_name'], 0, 1) . $user_profile['last_name'];
+			}
+			
+			$user_profile['password'] = "000000";
+			$user_profile['firstName'] = $user_profile['first_name'];
+			$user_profile['lastName'] = $user_profile['last_name'];
+			$user_profile['bloodstone'] = '1';
+			$user_profile['fbID'] = $user_profile['id'];
+			unset($user_profile['id']);
+			$user_profile['salt'] = Security::generateAuthKey();
+			$user_profile['private_access_token'] = Security::generateAuthKey();
+			$user_profile['public_access_token'] = Security::generateAuthKey();
+			if ($this->save($user_profile)) {
+				$result['result'] = "success";
+				$result['id'] = $this->id;
+				return $result;
+			}
+			else{
+				$result['result'] = "faliure";
+				$result['errors'] = $this->validationErrors;
+				return $result;
+			}
+		}
+		$result['result'] = "faliure";
+		return $result;
+	}
+	
+	public function generateNewTokens($id = -1){
+		if($id > -1){
+			$user['id'] = $id;
+			$user['private_access_token'] = Security::generateAuthKey();
+			$user['public_access_token'] = Security::generateAuthKey();
+			
+			if ($this->save($user)) {
+				$result['result'] = 'success';
+				return $result;
+			}
+			else{
+				$result['result'] = $this->validationErrors;
+				return $result;
+			}
+		}
+		$result['result'] = 'failure';
+		return $result;
+	}
+	
+	public function clearTokens($id = -1){
+		if($id > -1){
+			if($this->exists($id)){
+				$user['id'] = $id;
+				$user['private_access_token'] = "";
+				$user['public_access_token'] = "";
+				if($this->save($user)){
+					$result['result'] = 'success';
+					return $result;
+				}
+			}
+		}
+		$result['result'] = 'failure';
+		return $result;
+	}
+	
+	public function edit($data){
+		$db = ConnectionManager::getDataSource('default');
+		$data['updated'] = $db->expression('NOW()');
+		if( $this->save($data) ){
+			$result['result'] = "success";
+			CakeSession::write('Auth', $this->getUser($data['id']));
+			return $result;
+		}
+		else{
+			$result['result'] = "faliure";
+			$result['errors'] = $this->validationErrors;
+			return $result;
+		}
+	}
+	
+	public function changePass($data){
+		$db = ConnectionManager::getDataSource('default');
+		$data['updated'] = $db->expression('NOW()');
+		$data['salt'] = Security::generateAuthKey();
+		if( $this->save($data) ){
+			$result['result'] = "success";
+			return $result;
+		}
+		else{
+			$result['result'] = "faliure";
+			$result['errors'] = $this->validationErrors;
+			return $result;
+		}
+	}
+	
 }
