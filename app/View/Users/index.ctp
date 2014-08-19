@@ -305,14 +305,14 @@ filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org
 		<div class="col-sm-6 fullContent">
 			<div class="p1buttonsContainer">
 				<center>
-					<img class="p1buttons" src='<?php echo $this->webroot . "img/1hour.gif";?>'>
-					<img style="max-height:100%; max-width:100%;" src='<?php echo $this->webroot . "img/1hourhover.gif";?>'>
+					<img class="p1buttons choose60" src='<?php echo $this->webroot . "img/1hour.gif";?>'>
+					<img class="choose60" style="max-height:100%; max-width:100%;" src='<?php echo $this->webroot . "img/1hourhover.gif";?>'>
 				</center>
 			</div>
 			<div class="p1buttonsContainer">
 				<center>
-					<img class="p1buttons" src='<?php echo $this->webroot . "img/30minutes.gif";?>'>
-					<img style="max-height:100%; max-width:100%;" src='<?php echo $this->webroot . "img/30minuteshover.gif";?>'>
+					<img class="p1buttons choose30" src='<?php echo $this->webroot . "img/30minutes.gif";?>'>
+					<img class="choose30" style="max-height:100%; max-width:100%;" src='<?php echo $this->webroot . "img/30minuteshover.gif";?>'>
 				</center>
 			</div>
 		</div>
@@ -333,6 +333,13 @@ filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org
 
 var mobile = "<?php echo $mobile; ?>";
 
+$(".choose60").click(function(){
+	window.location = "<?php echo $this->Html->url(array('controller'=>'calendars', 'action'=>'newLessions', 60)); ?>";
+});
+
+$(".choose30").click(function(){
+	window.location = "<?php echo $this->Html->url(array('controller'=>'calendars', 'action'=>'newLessions', 30)); ?>";
+});
 
 function initialize() {
 	

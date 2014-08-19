@@ -4,7 +4,7 @@
 	
 		public function beforeFilter(){
 			parent::beforeFilter();
-       		$this->Auth->allow('index', 'loginAjax', 'add');
+       		$this->Auth->allow('index', 'loginAjax', 'add', 'addAjax');
 		}
 		
 		public $components = array('UploadPic', 'AccessToken');
@@ -34,74 +34,20 @@
         	return new CakeResponse(array('body' => json_encode($result)));
     	}
 		
-		public function add(){
+		public function addAjax(){
+			$this->layout = 'ajax';
 			if($this->request->is('post')){
-				$this->User->create();
-				$this->request->data['User']['salt'] = Security::generateAuthKey();
-				$this->request->data['User']['dateTime'] = null;
-				 if ($this->User->save($this->request->data)) {
-               		 $this->Session->setFlash(__('The user has been saved'));
-               	 	 if ($this->Auth->login()) {
-        			 	return $this->redirect($this->Auth->redirect());
-          	  		 }
-           		 }
-           		 $this->Session->setFlash(__('The user could not be saved. Please, try again'));
+				$result = $this->User->add($this->request->data);
+				if($result['result'] == 'success'){
+					$this->request->data['id'] = $result['id'];
+					$this->Auth->login($this->request->data);
+				}
+				return new CakeResponse(array('body' => json_encode($result)));
 			}
-		}
-		
-		public function edit(){
- 
-            if ($this->request->is('post')) {
-                $this->User->id = $this->Auth->user('id');
-                
-                if(!$this->User->exists()){
-      				$this->Session->setFlash(__('Unable to find User.'));
-   				}
-                $success = true;
-                $this->User->set($this->request->data);
-                
-                if($this->request->data['User']['firstNameEdit']){
-                	if($this->User->Validates(array('fieldList' => array('firstNameEdit')))){
-						if ($this->User->saveField('firstName', $this->request->data['User']['firstNameEdit'])) {
-							$this->Session->write('Auth.User.firstName', $this->request->data['User']['firstNameEdit']);
-							$success = true;
-						}else { $success = false; }
-					}else { $success = false; }
-                }
-                
-                if($this->request->data['User']['lastNameEdit']){
-                	if($this->User->Validates(array('fieldList' => array('lastNameEdit')))){
-						if ($this->User->saveField('lastName', $this->request->data['User']['lastNameEdit'])) {
-							$this->Session->write('Auth.User.lastName', $this->request->data['User']['lastNameEdit']);
-							$success = true;
-						}else { $success = false; }
-					}else { $success = false; }
-                }
-                
-                if($this->request->data['User']['emailEdit']){
-                	if($this->User->Validates(array('fieldList' => array('emailEdit')))){
-						if ($this->User->saveField('email', $this->request->data['User']['emailEdit'])) {
-							$this->Session->write('Auth.User.email', $this->request->data['User']['emailEdit']);
-							$success = true;
-						}else { $success = false; }
-					}else { $success = false; }
-                }
-                
-                if($this->request->data['User']['passwordEdit']){
-                	if($this->User->Validates(array('fieldList' => array('currentPassword', 'passwordEdit', 'passwordConfirmEdit')))){
-						if ($this->User->saveField('password', $this->request->data['User']['passwordEdit'])) {
-							$success = true;
-						}else { $success = false; }
-					}else { $success = false; }
-                }
-                
-                if($success){
-                    $this->Session->setFlash(__('The user has been updated'));
-                    $this->redirect(array('action' => 'showProfile'));
-                }else{
-                   // $this->Session->setFlash(__('Unable to update your user.'));
-                }
-            }
+			else{
+				$result['result'] = 'failure';
+				return new CakeResponse(array('body' => json_encode($result)));
+			}
 		}
 		
 	}

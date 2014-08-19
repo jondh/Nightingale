@@ -1,11 +1,14 @@
-
+<?php
+	echo $this->element('newUser');
+?>
 
 <div class="container" style="width:100%;">
-	<div class="jumbotron col-md-8">
-		<div id="calendar"></div>
+	<div class="col-md-8">
+		<h1 class="well">Choose Your <?php echo $length; ?>min Lession(s)</h1>
+		<div class="jumbotron" id="calendar"></div>
 	</div>
 	<div class="col-md-4">
-		<button class="btn" onclick="submitEntries()">Submit</button>
+		<button id="submitBtn" class="btn btn-primary" onclick="submitEntries(this)" style="width:100%" disabled>Submit</button>
 		<ul id="selectedLessions" class="list-group">
 			<a class="list-group-item active h3">
 				<span id="lessionNum">0</span> Lessions
@@ -15,15 +18,34 @@
 	
 </div>
 
-<script>
+<?php echo $this->fetch('newUserModal'); ?>
 
-		
-	var lessionTime = 60;
+<?php echo $this->fetch('newUserScript'); ?>
+
+<script>
+	var lessionTime = <?php echo json_encode($length); ?>;
 	var numLessions = 0;
+	var minNewLessions = 4;
 	
-	var entries = <?php echo json_encode($entries['return']); ?>;
 	
+	var myLessions = <?php echo json_encode($myLessions); ?>;
+	var otherLessions = <?php echo json_encode($otherLessions); ?>;
+	var blocks = <?php echo json_encode($blocks); ?>;
 	var newEntries = [];
+	
+	var userId = <?php 	
+			if($loggedIn){
+				echo json_encode($user['id']);
+			}
+			else{
+				echo -1;
+			}
+	?>;
+	
+	if(myLessions == ""){
+		$("#submitBtn").empty().append("Please Select At Least "+minNewLessions+" Lessions");
+		$("#submitBtn").attr('disabled', true);
+	}
 
 	$('#calendar').fullCalendar({
 		header: {
@@ -71,16 +93,47 @@
 		    },
 		events: function(start, end, timezone, callback) {
 			var events = [];
-			//alert(entries.length);
-			for(var i = 0; i < entries.length; i++){
-				var startDate = moment(entries[i].CalendarEntry.time, "YYYY-MM-DD hh:mm:ss");
-				var endDate = moment(startDate);
-				endDate.add('minutes', entries[i].CalendarEntry.length);
-				events.push({
-					title: entries[i].CalendarEntry.description,
-					start: startDate.toISOString(),
-					end: endDate.toISOString()
-				});
+			if(myLessions){
+				for(var i = 0; i < myLessions.length; i++){
+					var startDate = moment.utc(myLessions[i].CalendarEntry.time, "YYYY-MM-DD HH:mm:ss");
+					var endDate = moment.utc(startDate);
+					endDate.add('minutes', myLessions[i].CalendarEntry.length);
+					events.push({
+						title: myLessions[i].CalendarEntry.description,
+						start: startDate.toISOString(),
+						end: endDate.toISOString(),
+						backgroundColor: "#1202c4",
+						borderColor: "#aaaaaa"
+					});
+				}
+			}
+			if(otherLessions){
+				for(var i = 0; i < otherLessions.length; i++){
+					var startDate = moment.utc(otherLessions[i].CalendarEntry.time, "YYYY-MM-DD HH:mm:ss");
+					var endDate = moment.utc(startDate);
+					endDate.add('minutes', otherLessions[i].CalendarEntry.length);
+					events.push({
+						title: otherLessions[i].CalendarEntry.description,
+						start: startDate.toISOString(),
+						end: endDate.toISOString(),
+						backgroundColor: "#4A8591",
+						borderColor: "#aaaaaa"
+					});
+				}
+			}
+			if(blocks){
+				for(var i = 0; i < blocks.length; i++){
+					var startDate = moment.utc(blocks[i].CalendarEntry.time, "YYYY-MM-DD HH:mm:ss");
+					var endDate = moment.utc(startDate);
+					endDate.add('minutes', blocks[i].CalendarEntry.length);
+					events.push({
+						title: blocks[i].CalendarEntry.description,
+						start: startDate.toISOString(),
+						end: endDate.toISOString(),
+						backgroundColor: "#000",
+						borderColor: "#aaaaaa"
+					});
+				}
 			}
 			callback(events);
 		}
@@ -91,8 +144,21 @@
 		numLessions++;
 		newEntries.push({
 			cal_id: 'entry'+numLessions,
-			time: d.format("YYYY-MM-DD hh:mm:ss")
+			user_id: userId,
+			calendar_id: <?php echo json_encode($calendar['Calendar']['id']); ?>,
+			time: d.format("YYYY-MM-DD HH:mm:ss"),
+			length: lessionTime,
+			type: 1,
+			description: "lession",
+			timeStamp: ""
 		});
+		if(myLessions != ""){
+			$("#submitBtn").attr('disabled', false);
+		}
+		else if(numLessions >= minNewLessions){
+			$("#submitBtn").attr('disabled', false);
+			$("#submitBtn").empty().append("Submit");
+		}
 		$("#lessionNum").empty().append(numLessions);
 		$("#selectedLessions").append("<div id='entry"+numLessions+"' class='list-group-item' onclick='removeEntry(this)'><span class='glyphicon glyphicon-remove'></span> "+d.format("dddd, MMMM Do YYYY, h:mm:ss a")+"</div>");
 	}
@@ -101,6 +167,16 @@
 		$("#calendar").fullCalendar('removeEvents', e.id);
 		$(e).remove();
 		revomeIdFromEntries(e.id);
+		if(myLessions != ""){
+			if(numLessions == 0){
+				$("#submitBtn").attr('disabled', true);
+			}
+		}
+		else if(numLessions < minNewLessions){
+			$("#submitBtn").attr('disabled', true);
+			$("#submitBtn").empty().append("Please Select At Least "+minNewLessions+" Lessions");
+		}
+		
 	}
 	
 	function revomeIdFromEntries(id){
@@ -114,26 +190,28 @@
 		}
 	}
 	
-	function submitEntries(){
+	function submitEntries(btn){
 		var loggedIn = <?php echo json_encode($loggedIn); ?>;
 		if(loggedIn){
-			postEntries(<?php echo json_encode($user['id']); ?>);
+			postEntries();
 		}
 		else{
-			
+			$("#newUserModal").modal('show');
 		}
 		
 	}
 	
-	function postEntries(uid){
-		var submitData = {
-			entries: newEntries,
-			user_id: uid,
-			calendar_id: <?php echo json_encode($calendar['Calendar']['id']); ?>,
-			length: lessionTime
+	function newUserComplete(id){
+		for(var i = 0; i < newEntries.length; i++){
+			newEntries[i].user_id = id;
 		}
-		$.post("<?php echo $this->Html->url(array('controller'=>'calendar_entries', 'action'=>'addMany')); ?>", JSON.stringify(submitData), function(data){
-			
+		postEntries();
+	}
+	
+	function postEntries(){
+		alert(JSON.stringify(newEntries));
+		$.post("<?php echo $this->Html->url(array('controller'=>'calendar_entries', 'action'=>'addMany')); ?>", JSON.stringify(newEntries), function(data){
+			location.reload();
 		});
 	}
 	

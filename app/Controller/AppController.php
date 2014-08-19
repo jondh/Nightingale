@@ -69,10 +69,10 @@ class AppController extends Controller {
 			$this->set('user', $this->Auth->user());
 		}
 		else{
-			$login['login'] = false;
-			$login['user'] = $this->Auth->user();
-			$this->set('login', $login);
 			$this->set('loggedIn', false);
+			$login['login'] = false;
+			$login['user'] = null;
+			$this->set('login', $login);
 		}
         
         Security::setHash('sha512');

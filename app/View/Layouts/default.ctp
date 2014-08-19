@@ -65,6 +65,14 @@ $cakeDescription = __d('cake_dev', 'Nightingale Studios');
  
 </head>
 
+<style>
+
+ul{
+	margin-left: 0; margin-right: 0;
+}
+
+</style>
+
 <?php
  if (class_exists('JsHelper') && method_exists($this->Js, 'writeBuffer')) echo $this->Js->writeBuffer();
 ?>
@@ -90,7 +98,7 @@ $cakeDescription = __d('cake_dev', 'Nightingale Studios');
           <ul class="nav navbar-nav navbar-right">
           		<li id="profileLI"><a id="profile"><?php echo $login['user']['firstName'] . " " . $login['user']['lastName']; ?></a></li>
 				<li id="logoutLI"><a id="logout" style="cursor: pointer;">Logout</a></li>
-				<li id="loginLI" style="display:none">
+				<!-- <li id="loginLI" style="display:none">
 					<form id="loginForm" class="navbar-form" method="post">
 						<div id="loginUsername" class="form-group">
 							<input type="text" placeholder="Username" name="username" class="form-control">
@@ -101,7 +109,7 @@ $cakeDescription = __d('cake_dev', 'Nightingale Studios');
 						<button id="loginFormSubmit" onclick="return false;" class="btn btn-success">Sign in</button>
 						<button id="loginFormNewUser" onclick="return false;" class="btn btn-success">New User</button>
 					</form>
-				</li>
+				</li> -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>

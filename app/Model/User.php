@@ -227,6 +227,23 @@ class User extends AppModel {
   		}
   		return true;
    }
+   
+	public function add($data){
+		//$db = ConnectionManager::getDataSource('default');
+		$data['dateTime'] = null;
+		//$data['updated'] = $db->expression('NOW()');
+		$data['salt'] = Security::generateAuthKey();
+		if ($this->save($data)) {
+			$result['result'] = "success";
+			$result['id'] = $this->id;
+			return $result;
+		}
+		else{
+			$result['result'] = "faliure";
+			$result['errors'] = $this->validationErrors;
+			return $result;
+		}
+	}
 	
     public function getUsers($userIds){
     	if($userIds){
@@ -269,9 +286,25 @@ class User extends AppModel {
 	
 	public function getUser($id = -1){
 		if($id > -1){
+			$user = $this->find('all', array(
+				'conditions' => array(
+					'id' => $id
+				)
+			));
+			
+			return $user;
+		}
+		return null;
+	}
+	
+	public function getUserSafe($id = -1){
+		if($id > -1){
 			$user = $this->find('first', array(
 				'conditions' => array(
 					'id' => $id
+				),
+				'fields' => array(
+					'id', 'username', 'firstName', 'lastName', 'email', 'fbID', 'updated', 'dateTime'
 				)
 			));
 			
@@ -345,26 +378,6 @@ class User extends AppModel {
 			return $user;
 		}
 	}
-	
-	public function add($data){
-		$data['dateTime'] = null;
-		$db = ConnectionManager::getDataSource('default');
-		$data['updated'] = $db->expression('NOW()');
-		$data['bloodstone'] = '1';
-		$data['salt'] = Security::generateAuthKey();
-		$data['private_access_token'] = Security::generateAuthKey();
-		$data['public_access_token'] = Security::generateAuthKey();
-		if ($this->save($data)) {
-			$result['result'] = "success";
-			$result['id'] = $this->id;
-			return $result;
-		}
-		else{
-			$result['result'] = "faliure";
-			$result['errors'] = $this->validationErrors;
-			return $result;
-		}
-    }
 	
 	public function addFromFacebook($user_profile = 0){
 		if($user_profile != 0){
