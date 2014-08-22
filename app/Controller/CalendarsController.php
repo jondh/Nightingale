@@ -62,6 +62,7 @@
 			
 			$this->set('myLessions', $CalendarEntry->getLessionsForCalendarAndUser($calendar['Calendar']['id'], $user_id));
 			$this->set('otherLessions', $CalendarEntry->getLessionsForCalendarAndNotUser($calendar['Calendar']['id'], $user_id));
+			$this->set('credits', $CalendarEntry->getLessonCreditsForUserAndLength($user_id, $length));
 			$this->set('blocks', $CalendarEntry->getBlocksForCalendar($calendar['Calendar']['id']));
 			$this->set('calendar', $calendar);
 			$this->set('length', $length);

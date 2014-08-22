@@ -4,7 +4,7 @@
 	
 		public function beforeFilter(){
 			parent::beforeFilter();
-       		$this->Auth->allow('index', 'loginAjax', 'add', 'addAjax');
+       		$this->Auth->allow('index', 'loginAjax', 'add', 'addAjax', 'payment');
 		}
 		
 		public $components = array('UploadPic', 'AccessToken');
@@ -47,6 +47,27 @@
 			else{
 				$result['result'] = 'failure';
 				return new CakeResponse(array('body' => json_encode($result)));
+			}
+		}
+		
+		public function payment(){
+			$this->layout = 'ajax';
+			// Set your secret key: remember to change this to your live secret key in production
+			// See your keys here https://dashboard.stripe.com/account
+			Stripe::setApiKey("sk_test_aUf11Be0B0Q90X8cfrEwwILA");
+
+			// Create the charge on Stripe's servers - this will charge the user's card
+			try {
+				$charge = Stripe_Charge::create(array(
+				  	"amount" => $this->request->data['amount'], // amount in cents, again
+				  	"currency" => "usd",
+				  	"card" => $this->request->data['token'],
+				  	"description" => $this->request->data['email'],
+			  	  	"receipt_email" => $this->request->data['email'])
+				);
+				return new CakeResponse(array('body' => json_encode($this->request->data)));
+			} catch(Stripe_CardError $e) {
+				return new CakeResponse(array('body' => json_encode($e)));
 			}
 		}
 		

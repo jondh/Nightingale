@@ -39,7 +39,9 @@ $cakeDescription = __d('cake_dev', 'Nightingale Studios');
 		echo $this->fetch('script');
 		
 		echo $this->Html->script(array('https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js', 
-							'http://code.jquery.com/ui/1.10.1/jquery-ui.js'));
+							'http://code.jquery.com/ui/1.10.1/jquery-ui.js',
+							'alerts',
+							'spin'));
         echo $scripts_for_layout;
 	?>
 	
@@ -71,6 +73,15 @@ ul{
 	margin-left: 0; margin-right: 0;
 }
 
+#overlay{
+	position:fixed;
+	display: none;
+	width:100%; height:100%;
+	background: rgb(0, 0, 0); /* The Fallback */
+	background: rgba(0, 0, 0, 0.8); 
+	z-index:5000;
+}
+
 </style>
 
 <?php
@@ -78,6 +89,9 @@ ul{
 ?>
 
 <body>	
+	
+	<div id="overlay"></div>
+	<div id="foo"></div>
 	
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" >
@@ -88,12 +102,11 @@ ul{
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Nightingale</a>
+          <a class="navbar-brand" href="<?php echo $this->Html->url(array('controller'=>'users', 'action'=>'index')); ?>">Nightingale</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-			<li><a href="#home" ><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#about">About</a></li>
+			<li><a href="<?php echo $this->Html->url(array('controller'=>'posts', 'action'=>'index')); ?>" ><span class="glyphicon glyphicon-home"></span> Home</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
           		<li id="profileLI"><a id="profile"><?php echo $login['user']['firstName'] . " " . $login['user']['lastName']; ?></a></li>
@@ -178,6 +191,38 @@ ul{
     			}
     		});
     	});
+		
+		var opts = {
+		  lines: 9, // The number of lines to draw
+		  length: 40, // The length of each line
+		  width: 12, // The line thickness
+		  radius: 55, // The radius of the inner circle
+		  corners: 1, // Corner roundness (0..1)
+		  rotate: 67, // The rotation offset
+		  direction: 1, // 1: clockwise, -1: counterclockwise
+		  color: '#fff', // #rgb or #rrggbb or array of colors
+		  speed: 1, // Rounds per second
+		  trail: 91, // Afterglow percentage
+		  shadow: true, // Whether to render a shadow
+		  hwaccel: false, // Whether to use hardware acceleration
+		  className: 'spinner', // The CSS class to assign to the spinner
+		  zIndex: 5000, // The z-index (defaults to 2000000000)
+		  top: '50%', // Top position relative to parent
+		  left: '50%' // Left position relative to parent
+		};
+		var target = document.getElementById('foo');
+		var spinner = new Spinner(opts).spin(target);
+		spinner.stop();
+		
+		function showOverlay(){
+			$("#overlay").show();
+			spinner.spin(target);
+		}
+		
+		function hideOverlay(){
+			$("#overlay").hide();
+			spinner.stop();
+		}
     	
     </script>
     

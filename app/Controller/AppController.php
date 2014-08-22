@@ -22,6 +22,7 @@
  */
 App::uses('Controller', 'Controller');
 App::uses('Security', 'Utility');
+App::uses('ConnectionManager', 'Model');
 
 /**
  * Application Controller
@@ -39,7 +40,8 @@ class AppController extends Controller {
         'Auth' => array(
         	'authenticate' => array('SaltForm'),
             'loginRedirect' => array('controller' => 'posts', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => 'users', 'action' => 'index')
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'index'),
+			'loginAction' => array('controller' => 'users', 'action' => 'index')
         )
     );
 
@@ -50,6 +52,7 @@ class AppController extends Controller {
         parent::beforeFilter();
 		
 		require_once(APP. 'Vendor' . DS . 'Mobile_Detect.php');
+		require_once(APP. 'Vendor' . DS . 'Stripe.php');
 		
 		$mobileDetect = new Mobile_Detect;
 		

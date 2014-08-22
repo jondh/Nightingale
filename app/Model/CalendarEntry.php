@@ -1,4 +1,7 @@
 <?php
+
+App::import('Model', 'Payment');
+
 class CalendarEntry extends AppModel {
 	
 	public function addMultiple($data = -1){
@@ -11,6 +14,27 @@ class CalendarEntry extends AppModel {
 		$result['result'] = "faliure";
 		$result['errors'] = $this->validationErrors;
 		return $result;
+	}
+	
+	public function getNumberOfLessonsForUserAndLength($user_id = -1, $length = 30){
+		if($user_id > 0){
+			$count = $this->find('count', array(
+				'conditions' => array(
+					'user_id' => $user_id,
+					'length' => $length
+				)
+			));
+			return $count;
+		}
+	}
+	
+	public function getLessonCreditsForUserAndLength($user_id = -1, $length = 30){
+		if($user_id > 0){
+			$Payment = ClassRegistry::init('Payment');
+			$schedLessons = $this->getNumberOfLessonsForUserAndLength($user_id, $length);
+			$paidLessons = $Payment->getLessonsForUserAndLength($user_id, $length);
+			return $paidLessons - $schedLessons;
+		}
 	}
 	
 	public function getEntriesForCalendar($calendar_id = -1){
