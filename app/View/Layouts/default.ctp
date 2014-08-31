@@ -69,6 +69,18 @@ $cakeDescription = __d('cake_dev', 'Nightingale Studios');
 
 <style>
 
+body{
+	background-image: url("<?php echo $this->webroot . 'img/whitetexture.jpg';?>");
+}
+
+#defaultNavbar{
+	background-image: url("<?php echo $this->webroot . 'img/blacktexture.jpg';?>");
+}
+
+.whiteText{
+	color: white;
+}
+
 h1, h2, h3{
 	background-color:transparent;
 }
@@ -98,7 +110,7 @@ ul{
 	<div id="foo"></div>
 	
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" >
+    <div id="defaultNavbar" class="navbar navbar-default navbar-fixed-top navbar-inverse" >
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
