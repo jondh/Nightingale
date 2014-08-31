@@ -4,7 +4,7 @@
 	
 		public function beforeFilter(){
 			parent::beforeFilter();
-       		$this->Auth->allow('index', 'loginAjax', 'add', 'addAjax', 'payment');
+       		$this->Auth->allow('index', 'loginAjax', 'add', 'addAjax', 'payment', 'getGravitarURL');
 		}
 		
 		public $components = array('UploadPic', 'AccessToken');

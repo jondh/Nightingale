@@ -5,8 +5,26 @@ App::import('Model', 'Payment');
 class CalendarEntry extends AppModel {
 	
 	public function addMultiple($data = -1){
+		$db = ConnectionManager::getDataSource('default');
+		$db->expression('NOW()');
 		if($data != -1){
 			if( $this->saveAll($data) ){
+				$result['result'] = "success";
+				return $result;
+			}
+		}
+		$result['result'] = "faliure";
+		$result['errors'] = $this->validationErrors;
+		return $result;
+	}
+	
+	public function setDelete($id = -1){
+		if($id > 0){
+			$db = ConnectionManager::getDataSource('default');
+			$data['id'] = $id;
+			$data['deleted'] = '1';
+			$data['updated'] = $db->expression('NOW()');
+			if( $this->save($data) ){
 				$result['result'] = "success";
 				return $result;
 			}
@@ -21,7 +39,8 @@ class CalendarEntry extends AppModel {
 			$count = $this->find('count', array(
 				'conditions' => array(
 					'user_id' => $user_id,
-					'length' => $length
+					'length' => $length,
+					'deleted' => 0
 				)
 			));
 			return $count;
@@ -51,7 +70,8 @@ class CalendarEntry extends AppModel {
 					)
 				),
 				'conditions' => array(
-					'CalendarEntry.calendar_id' => $calendar_id
+					'CalendarEntry.calendar_id' => $calendar_id,
+					'CalendarEntry.deleted' => 0
 				),
 				'fields' => array(
 					'CalendarEntry.*', 'User.id', 'User.username', 'User.firstName', 'User.lastName', 'User.email'
@@ -90,7 +110,74 @@ class CalendarEntry extends AppModel {
 				'conditions' => array(
 					'CalendarEntry.calendar_id' => $calendar_id,
 					'CalendarEntry.user_id' => $user_id,
-					'CalendarEntry.type' => '1'
+					'CalendarEntry.type' => '1',
+					'CalendarEntry.deleted' => 0
+				),
+				'fields' => array(
+					'CalendarEntry.*', 'User.id', 'User.username', 'User.firstName', 'User.lastName', 'User.email'
+				)
+			));	
+			
+			return $entries;
+		}
+	}
+	
+	public function getUpcomingLessionsForCalendarAndUser($calendar_id = -1, $user_id = -1){
+		$db = ConnectionManager::getDataSource('default');
+		if($calendar_id > 0 && $user_id > -1){
+			$entries = $this->find('all', array(
+				'joins' => array(
+					array(
+						'table' => 'users',
+						'alias' => 'User',
+						'type' => 'INNER',
+						'conditions' => array(
+							'CalendarEntry.user_id = User.id',
+						)
+					)
+				),
+				'conditions' => array(
+					'CalendarEntry.calendar_id' => $calendar_id,
+					'CalendarEntry.user_id' => $user_id,
+					'CalendarEntry.type' => '1',
+					'CalendarEntry.time >=' => date('Y-m-d H:i:s'),
+					'CalendarEntry.deleted' => 0
+				),
+				'order' => array(
+					'CalendarEntry.time ASC'
+				),
+				'fields' => array(
+					'CalendarEntry.*', 'User.id', 'User.username', 'User.firstName', 'User.lastName', 'User.email'
+				)
+			));	
+			
+			return $entries;
+		}
+	}
+	
+	public function getPreviousLessionsForCalendarAndUser($calendar_id = -1, $user_id = -1){
+		$db = ConnectionManager::getDataSource('default');
+		if($calendar_id > 0 && $user_id > -1){
+			$entries = $this->find('all', array(
+				'joins' => array(
+					array(
+						'table' => 'users',
+						'alias' => 'User',
+						'type' => 'INNER',
+						'conditions' => array(
+							'CalendarEntry.user_id = User.id',
+						)
+					)
+				),
+				'conditions' => array(
+					'CalendarEntry.calendar_id' => $calendar_id,
+					'CalendarEntry.user_id' => $user_id,
+					'CalendarEntry.type' => '1',
+					'CalendarEntry.time <=' => date('Y-m-d H:i:s'),
+					'CalendarEntry.deleted' => 0
+				),
+				'order' => array(
+					'CalendarEntry.time DESC'
 				),
 				'fields' => array(
 					'CalendarEntry.*', 'User.id', 'User.username', 'User.firstName', 'User.lastName', 'User.email'
@@ -117,7 +204,8 @@ class CalendarEntry extends AppModel {
 				'conditions' => array(
 					'CalendarEntry.calendar_id' => $calendar_id,
 					'CalendarEntry.user_id !=' => $user_id,
-					'CalendarEntry.type' => '1'
+					'CalendarEntry.type' => '1',
+					'CalendarEntry.deleted' => 0
 				),
 				'fields' => array(
 					'CalendarEntry.*', 'User.id', 'User.username', 'User.firstName', 'User.lastName', 'User.email'
@@ -133,7 +221,8 @@ class CalendarEntry extends AppModel {
 			$entries = $this->find('all', array(
 				'conditions' => array(
 					'CalendarEntry.calendar_id' => $calendar_id,
-					'CalendarEntry.type' => '0'
+					'CalendarEntry.type' => '0',
+					'CalendarEntry.deleted' => 0
 				),
 				'fields' => array(
 					'CalendarEntry.*'
@@ -169,7 +258,8 @@ class CalendarEntry extends AppModel {
 					'OR' => array(
 						'CalendarEntry.user_id' => $user_id,
 						'Calendar.teacher_id' => $user_id
-					)
+					),
+					'CalendarEntry.deleted' => 0
 				),
 				'fields' => array(
 					'CalendarEntry.*', 'User.id', 'User.username', 'User.firstName', 'User.lastName', 'User.email'

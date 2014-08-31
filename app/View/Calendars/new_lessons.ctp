@@ -9,19 +9,35 @@
 
 <div class="container" style="width:100%;">
 	<div class="col-md-8">
-		<h1 class="well">Choose Your <?php echo $length; ?>min Lesson(s)</h1>
+		<div class="well">
+			<h1>Choose Your <?php echo $length; ?>min Lesson(s)</h1>
+			<?php 	if($length == 30){
+						$newLength = 60;
+				  	}
+					else{
+						$newLength = 30;
+					} 
+			?>
+			<a href="<?php echo $this->Html->url(array('controller'=>'calendars', 'action'=>'newLessons', $newLength)); ?>">
+				<button class="btn btn-default btn-lg">Choose <?php echo $newLength; ?>min Instead</button>
+			</a>
+		</div>
 		<div class="jumbotron" id="calendar"></div>
 	</div>
 	<div class="col-md-4">
 		<?php if($credits > 0){ ?>
-		<h1 class="well">
+		<div class="well">
+			<h1>
 			You have <span id="totalCredits"><?php echo $credits; ?></span> credit(s).
-		</h1>
+			</h1>
+		</div>
 		<?php } ?>
-		<h1 class="well">
-			$<span id="totalAmount">0</span>
-			<button id="submitBtn" class="btn btn-primary" onclick="submitEntries(this)" style="width:100%" disabled>Submit</button>
-		</h1>
+		<div class="well">
+			<h1>
+				$<span id="totalAmount">0</span>
+				<button id="submitBtn" class="btn btn-primary" onclick="submitEntries(this)" style="width:100%" disabled>Submit</button>
+			</h1>
+		</div>
 		<ul id="selectedLessons" class="list-group">
 			<a class="list-group-item active h3">
 				<span id="lessonNum">0</span> Lessons
@@ -311,7 +327,6 @@
 	
 	function postEntries(){
 		$.post("<?php echo $this->Html->url(array('controller'=>'calendar_entries', 'action'=>'addMany')); ?>", JSON.stringify(newEntries), function(data){
-			alert(data);
 			hideOverlay();
 			location.reload();
 		});

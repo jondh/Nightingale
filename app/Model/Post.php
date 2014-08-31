@@ -61,7 +61,7 @@ class Post extends AppModel {
 				)
 			),
 			'order' => array(
-				'updated DESC'
+				'Post.updated DESC'
 			),
 			'fields' => array(
 				'Post.*', 'User.*'

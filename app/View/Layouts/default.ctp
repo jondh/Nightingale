@@ -69,6 +69,10 @@ $cakeDescription = __d('cake_dev', 'Nightingale Studios');
 
 <style>
 
+h1, h2, h3{
+	background-color:transparent;
+}
+
 ul{
 	margin-left: 0; margin-right: 0;
 }

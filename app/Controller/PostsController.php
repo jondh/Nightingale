@@ -12,7 +12,7 @@
 			$this->set('posts', $posts);
 		}
 		
-		public function add(){
+		public function addAjax(){
 			$this->layout = "ajax";
 			
 			if($this->request->is('post')){

@@ -12,6 +12,18 @@
 			
 		}
 		
+		public function deleteAjax(){
+			$this->layout = 'ajax';
+			if($this->request->is('post')){
+				if(array_key_exists('id', $this->request->data)){
+					$result = $this->CalendarEntry->setDelete($this->request->data['id']);
+					return new CakeResponse(array('body' => json_encode($result)));
+				}
+			}
+			$result['result'] = "failure";
+			return new CakeResponse(array('body' => json_encode($result)));
+		}
+		
 		public function addMany(){
 			$this->layout = 'ajax';
 			$data = file_get_contents('php://input');

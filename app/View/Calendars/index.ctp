@@ -1,112 +1,91 @@
+<?php
+	echo $this->element('posts');
+?>
 
+<style>
+
+#newLessonsButton{
+	margin-bottom:1em;
+	width:100%;
+}
+
+</style>
 
 <div class="container" style="width:100%;">
-	<div class="jumbotron col-md-8">
-		<div id="calendar"></div>
-	</div>
+	
 	<div class="col-md-4">
-		<ul id="selectedLessions" class="list-group">
-			<a class="list-group-item active h3">
-				<span id="lessionNum">0</span> Lessions
-			</a>
-		</ul>
+		<div class="well">
+			<center>
+				<img src="<?php echo $this->Gravatar->get_gravatar($user['email'], 200); ?>" class="img-circle">
+				<h2><?php echo $user['firstName'] . " " . $user['lastName']; ?></h2>
+				<h3><?php echo count($upcomingLessons); ?> upcoming lessons</h3>
+				<h3><?php echo count($previousLessons); ?> previous lessons</h3>
+				<h4>Joined: <?php echo $this->Time->format($user['dateTime'], '%B %e, %Y'); ?></h4>
+			</center>
+		</div>
+	</div>
+	
+	<div class="col-md-8">
+		<div class="list-group">
+			<a class="list-group-item active">Upcoming Lessons</a>
+			<?php foreach($upcomingLessons as $lesson): ?>
+				<a class="list-group-item">
+					<?php echo $this->Time->format($lesson['CalendarEntry']['time'], '%B %e, %Y %H:%M %p'); ?>
+					<?php if( (time()+(60*60*24*$calendar['Calendar']['no_cancel_days'])) < strtotime($lesson['CalendarEntry']['time'])){ ?>
+					<span class="glyphicon glyphicon-remove pull-right" style="cursor:pointer" onclick="removeLesson(<?php echo $lesson['CalendarEntry']['id']; ?>)"></span>
+					<?php } ?>
+				</a>
+			<?php endforeach; ?>
+			<?php if(count($upcomingLessons) == 0): ?>
+				<a class="list-group-item">
+					<center>
+						You have no upcoming lessons. Click the button below to get educated.
+					</center>
+				</a>
+			<?php endif; ?>
+		</div>
+		
+		<a href="<?php echo $this->Html->url(array('controller'=>'calendars', 'action'=>'newLessons')); ?>">
+			<button id="newLessonsButton" class="btn btn-default">Buy More or Modify Lessons</button>
+		</a>
+		
+		<?php echo $this->fetch('postsDisplay'); ?>
 	</div>
 	
 </div>
 
+<div class="modal fade" id="deleteLessonModal" tabindex="-1" role="dialog" aria-labelledby="deleteLessonModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="deleteLessonModalLabel">Delete Lesson?</h4>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete this lesson?<br>
+		You will receive a credit to select another lesson of this length.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button id="deleteLessonModalSubmit" type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php echo $this->fetch('addPostScript'); ?>
+
 <script>
 
-		
-	var lessionTime = 60;
-	var numLessions = 0;
-	
-
-	$('#calendar').fullCalendar({
-		header: {
-			left: 'prev,next today',
-			center: 'title',
-			right: 'month,agendaWeek,agendaDay'
-		},
-		minTime: "08:00:00",
-		defaultView: 'agendaWeek',
-		editable: false,
-		dayClick: function(date, jsEvent, view) {
-
-			if(view.name.indexOf('month') < 0){
-				var endDate = moment(date);
-				endDate.add('minutes', lessionTime);
-				var sources = $("#calendar").fullCalendar( 'clientEvents', function(e){
-					if( ( (moment(e.start).isBefore(date) || moment(e.start).isSame(date)) && moment(e.end).isAfter(date)) || ( moment(e.start).isBefore(endDate) && (moment(e.end).isAfter(endDate) || moment(e.end).isSame(endDate)) ) || (moment(e.start).isAfter(date) && moment(e.end).isBefore(endDate)) ){
-						return true;
-					}
-					return false;
-				} );
-		        
-				if(sources.length == 0){
-					addLessionShow(date);
-					$('#calendar').fullCalendar('addEventSource',
-						{
-							events: [
-								{
-									title: 'test',
-									start: date.toISOString(),
-									end: endDate.toISOString()
-								}
-							]
-						}
-					);
-				}
-			}
-			
-
-		    },
-		events: [
-			{
-				title: 'All Day Event',
-				start: '2014-06-01'
-			},
-			{
-				title: 'Long Event',
-				start: '2014-06-07',
-				end: '2014-06-10'
-			},
-			{
-				id: 999,
-				title: 'Repeating Event',
-				start: '2014-06-09T16:00:00',
-				end: '2014-06-09T18:00:00'
-			},
-			{
-				id: 999,
-				title: 'Repeating Event',
-				start: '2014-06-16T16:00:00',
-				end: '2014-06-16T18:00:00'
-			},
-			{
-				title: 'Meeting',
-				start: '2014-06-12T10:30:00',
-				end: '2014-06-12T12:30:00'
-			},
-			{
-				title: 'Birthday Party',
-				start: '2014-06-13T08:00:00',
-				end: '2014-06-13T010:00:00'
-			},
-			{
-				title: 'Click for Google',
-				url: 'http://google.com/',
-				start: '2014-06-28'
-			}
-		]
-	});
-
-	
-	function addLessionShow(d){
-		numLessions++;
-		$("#lessionNum").empty().append(numLessions);
-		$("#selectedLessions").append("<div class='list-group-item'>"+d.format("dddd, MMMM Do YYYY, h:mm:ss a")+"</div>");
+	function removeLesson(entry_id){
+		$('#deleteLessonModal').modal('show');
+		$('#deleteLessonModalSubmit').unbind('click');
+		$('#deleteLessonModalSubmit').click(function(){
+			$('#deleteLessonModalSubmit').button('loading');
+			$.post("<?php echo $this->Html->url(array('controller'=>'calendar_entries', 'action'=>'deleteAjax')); ?>", {'id': entry_id}, function(data){
+				alert(data);
+			});
+		});
 	}
-	
-</script>
 
-			
+</script>
